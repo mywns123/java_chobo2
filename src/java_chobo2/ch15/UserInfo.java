@@ -21,6 +21,6 @@ public class UserInfo implements Serializable{
 
 	@Override
 	public String toString() {
-		return String.format("UserInfo [%s, %s, %s]", name, password, age);
+		return String.format("UserInfo [%s %s %s]", name, password, age);
 	}
 }

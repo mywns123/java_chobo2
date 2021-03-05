@@ -2,6 +2,7 @@ package java_chobo2.ch13;
 
 public class Ex13_10 {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		RunImplEx10 r = new RunImplEx10();
 		Thread th1 = new Thread(r, "*");

@@ -26,6 +26,7 @@ public class FileInputStreamEx {
 
 	}
 
+	@SuppressWarnings("resource")
 	public static void fileInputStreamEx() {
 		try {
 			FileInputStream fis = new FileInputStream("스크린샷(1).png");

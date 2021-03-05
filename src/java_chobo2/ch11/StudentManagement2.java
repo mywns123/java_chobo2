@@ -1,6 +1,5 @@
 package java_chobo2.ch11;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -37,33 +36,6 @@ public class StudentManagement2 {
 		} while (choice < 5);
 		sc.close();
 
-	}
-
-	private static ArrayList<Student> deleteStudent(ArrayList<Student> students, Scanner sc) {
-//		prnStudent(students);
-		System.out.print("삭제하고자하는 학생번호 입력 > ");
-		int delStdNo = sc.nextInt();
-
-		Student delStdent = new Student(delStdNo);
-		if (!students.contains(delStdent)) {
-			System.out.println("해당 하는 학생이 존재하지 않음");
-			
-		}
-		students.remove(delStdent);
-		return students;
-	}
-
-	private static void modifyStudent(HashMap<Integer, Student> students, Scanner sc) {
-		prnStudent(students);
-		System.out.print("수정하고자하는 학생번호 입력 > ");
-		int findStdNo = sc.nextInt();
-		Student upStd = new Student(findStdNo);
-		if (!students.containsValue(upStd)) {
-			System.out.println("해당 하는 학생이 존재하지 않음");
-			return;
-		}
-//		Integer idxStdNo = students.get(upStd);
-//		students.replace(idxStdNo, createStudent(sc));
 	}
 
 	private static void addStudent(HashMap<Integer, Student> students, Scanner sc) {

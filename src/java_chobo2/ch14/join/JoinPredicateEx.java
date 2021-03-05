@@ -12,6 +12,7 @@ public class JoinPredicateEx {
 	}// main
 
 	public static void extracted01() {
+		@SuppressWarnings("unused")
 		Predicate<Integer> p1 = new Predicate<Integer>() {
 
 			@Override

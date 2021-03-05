@@ -42,8 +42,8 @@ public class BiFunctionEx {
 		System.out.println(bip.test("abc", "abc"));
 
 		BiPredicate<String, String> bip2 = (t, u) -> t.equals(u);
-		System.out.println(bip.test("abc", "ab"));
-		System.out.println(bip.test("abc", "abc"));
+		System.out.println(bip2.test("abc", "ab"));
+		System.out.println(bip2.test("abc", "abc"));
 
 		BiFunction<Integer, Integer, String> bif = new BiFunction<Integer, Integer, String>() {
 			@Override
@@ -60,8 +60,8 @@ public class BiFunctionEx {
 		System.out.println(bif.apply(7, 7));
 
 		BiFunction<Integer, Integer, String> bif1 = (t, u) -> t == u ? "true" : "false";
-		System.out.println(bif.apply(5, 7));
-		System.out.println(bif.apply(7, 7));
+		System.out.println(bif1.apply(5, 7));
+		System.out.println(bif1.apply(7, 7));
 		
 		
 

@@ -70,8 +70,8 @@ public class MethodRefEx {
 		System.out.println(j.apply(m3));
 
 		Function<MyClass, Boolean> k = m1::equals;
-		System.out.println(j.apply(m2));
-		System.out.println(j.apply(m3));
+		System.out.println(k.apply(m2));
+		System.out.println(k.apply(m3));
 
 		Supplier<MyClass> s = MyClass::new;
 		System.out.println(s.get());

@@ -29,12 +29,12 @@ public class ListEx {
 	}
 
 	public static void extracted() {
-		ArrayList objList = new ArrayList();
+		ArrayList<Object> objList = new ArrayList<Object>();
 		objList.add("aa");
 		objList.add(1);
 		objList.add(new Department(1, "최순실", 10));
 
-		Iterator i = objList.iterator();
+		Iterator<Object> i = objList.iterator();
 		while (i.hasNext()) {
 			Object obj = i.next();
 			System.out.println(obj);

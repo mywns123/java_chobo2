@@ -1,7 +1,6 @@
 package java_chobo2.ch14.stream;
 
 import java.util.Random;
-import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class NewStreamEx {

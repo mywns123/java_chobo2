@@ -102,6 +102,7 @@ public class MidStreamEx {
 		.forEach(s -> System.out.print(s + " "));
 		System.out.println();
 		
+		@SuppressWarnings("unused")
 		IntPredicate test = new IntPredicate() {
 			
 			@Override

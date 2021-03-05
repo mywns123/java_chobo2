@@ -7,6 +7,7 @@ public class JoinFuunctionEx {
 	public static void main(String[] args) {		
 		int res = Integer.parseInt("AE", 16);//  AE -> 1010 1110(128 + 32 + 8 + 4 + 2)
 		System.out.println(res);
+		@SuppressWarnings("unused")
 		Function<String, Integer> fun = new Function<String, Integer>() {			
 			@Override
 			public Integer apply(String t) {				
@@ -21,6 +22,7 @@ public class JoinFuunctionEx {
 		System.out.println(g.apply(174));
 		
 		//andThen
+		@SuppressWarnings("unused")
 		Function<String, String> h = f.andThen(g);
 		System.out.println(f.apply("AE"));
 

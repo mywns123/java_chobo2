@@ -31,7 +31,7 @@ public class URLEx {
 					System.out.print("\tgetContentLength():" + conn.getContentLength());
 					System.out.println("getContentType():" + conn.getContentType());
 					System.out.print("\tgetDate():" + conn.getDate());
-					System.out.println("getDefaultAllowUserInteraction():" + conn.getDefaultAllowUserInteraction());
+					System.out.println("getDefaultAllowUserInteraction():" + URLConnection.getDefaultAllowUserInteraction());
 					System.out.println("getDefaultUseCaches():" + conn.getDefaultUseCaches());
 					System.out.print("\tgetDoInput():" + conn.getDoInput());
 					System.out.println("getDoOutput():" + conn.getDoOutput());

@@ -20,6 +20,7 @@ public class DeSerializableEx {
 			
 //			UserInfo u1 = (UserInfo) ois.readObject();
 //			UserInfo u2 = (UserInfo) ois.readObject();
+			@SuppressWarnings("unchecked")
 			ArrayList<UserInfo> list = (ArrayList<UserInfo>)ois.readObject();
 			
 			System.out.println(list.get(0));

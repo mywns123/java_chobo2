@@ -43,7 +43,7 @@ public class StreamMapEx {
 		System.out.println(total);
 		
 		stdStream = list.stream();
-		IntStream stdScoreIntStream = stdStream.mapToInt(Student::getTotalScore);
+//		IntStream stdScoreIntStream = stdStream.mapToInt(Student::getTotalScore);
 //		total = stdScoreIntStream.max().;
 		System.out.println(total);
 	}
@@ -59,7 +59,7 @@ public class StreamMapEx {
 		// map()으로 Stream<File>를 Stream<String>으로 변환
 		Stream<File> fileStream = list.stream();
 		Stream<String> fileNameStream = fileStream.map(File::getName);
-//		fileNameStream.forEach(System.out::println);
+		fileNameStream.forEach(System.out::println);
 		System.out.println();
 
 		list.stream().map(File::getName)

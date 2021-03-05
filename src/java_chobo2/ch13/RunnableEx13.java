@@ -4,6 +4,7 @@ package java_chobo2.ch13;
 public class RunnableEx13 implements Runnable {
 	Account2 acc = new Account2();
 
+	@SuppressWarnings("unused")
 	@Override
 	public void run() {
 		while(acc.getBalance()>0) {
